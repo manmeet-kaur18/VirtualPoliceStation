@@ -66,7 +66,7 @@ password : 12345
 
 ```sh
 username : Amrish
-role : admin
+role : main admin
 password : 12345
 ```
 
