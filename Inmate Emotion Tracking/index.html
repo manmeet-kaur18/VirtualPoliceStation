@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Face Expression Recognition</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script defer src="/js/face-api.min.js"></script>
+    <script defer src="/js/script.js"></script>
+    <style>
+        html,body {
+            height: 100%;
+        }
+        html {
+            display: table;
+            width: 100%;
+        }
+        body {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        canvas {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading"> Prisoner 1 Facial Emotion Tracking </h1>
+    <div id="videoele">
+        <video id="video" width="500px" height="500px"  style="padding-bottom: 10px" autoplay loop muted>
+            <source src="/videos/1.mp4" type="video/mp4">
+        </video>
+    </div>
+    <select id="ddlViewBy" style="width:500px">
+        <option value="camera1">Camera 1</option>
+        <option value="camera2">Camera 2</option>
+        <option value="camera3">Camera 3</option>
+    </select>
+</body>
+</html>
